@@ -14,13 +14,22 @@
 		C00B61F01927B78A008B1B10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B61EF1927B78A008B1B10 /* main.m */; };
 		C00B61F41927B78A008B1B10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B61F31927B78A008B1B10 /* AppDelegate.m */; };
 		C00B61F71927B78A008B1B10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00B61F51927B78A008B1B10 /* Main.storyboard */; };
-		C00B61FA1927B78A008B1B10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B61F91927B78A008B1B10 /* ViewController.m */; };
 		C00B61FC1927B78A008B1B10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C00B61FB1927B78A008B1B10 /* Images.xcassets */; };
 		C00B62031927B78A008B1B10 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00B62021927B78A008B1B10 /* XCTest.framework */; };
 		C00B62041927B78A008B1B10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00B61E31927B78A008B1B10 /* Foundation.framework */; };
 		C00B62051927B78A008B1B10 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00B61E71927B78A008B1B10 /* UIKit.framework */; };
 		C00B620D1927B78A008B1B10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C00B620B1927B78A008B1B10 /* InfoPlist.strings */; };
 		C00B620F1927B78A008B1B10 /* GarageSaleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B620E1927B78A008B1B10 /* GarageSaleTests.m */; };
+		C00B621A1927C85A008B1B10 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B62191927C85A008B1B10 /* SWRevealViewController.m */; };
+		C00B621D1927D4DB008B1B10 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B621C1927D4DB008B1B10 /* MenuViewController.m */; };
+		C00B62201927D51C008B1B10 /* ClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B621F1927D51C008B1B10 /* ClientViewController.m */; };
+		C00B62231927D52D008B1B10 /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B62221927D52D008B1B10 /* ProductViewController.m */; };
+		C00B62261927D53C008B1B10 /* OpportunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B62251927D53C008B1B10 /* OpportunityViewController.m */; };
+		C00B622F1927D606008B1B10 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B622E1927D606008B1B10 /* AboutViewController.m */; };
+		C00B62321927D626008B1B10 /* Opportunity.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B62311927D626008B1B10 /* Opportunity.m */; };
+		C00B62351927D633008B1B10 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B62341927D633008B1B10 /* Product.m */; };
+		C00B62381927D647008B1B10 /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B62371927D647008B1B10 /* Client.m */; };
+		C00B623B1927D655008B1B10 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B623A1927D655008B1B10 /* Menu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +54,32 @@
 		C00B61F21927B78A008B1B10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C00B61F31927B78A008B1B10 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C00B61F61927B78A008B1B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C00B61F81927B78A008B1B10 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C00B61F91927B78A008B1B10 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C00B61FB1927B78A008B1B10 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C00B62011927B78A008B1B10 /* GarageSaleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GarageSaleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00B62021927B78A008B1B10 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C00B620A1927B78A008B1B10 /* GarageSaleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GarageSaleTests-Info.plist"; sourceTree = "<group>"; };
 		C00B620C1927B78A008B1B10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C00B620E1927B78A008B1B10 /* GarageSaleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GarageSaleTests.m; sourceTree = "<group>"; };
+		C00B62181927C85A008B1B10 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		C00B62191927C85A008B1B10 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		C00B621B1927D4DB008B1B10 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		C00B621C1927D4DB008B1B10 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		C00B621E1927D51C008B1B10 /* ClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientViewController.h; sourceTree = "<group>"; };
+		C00B621F1927D51C008B1B10 /* ClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientViewController.m; sourceTree = "<group>"; };
+		C00B62211927D52D008B1B10 /* ProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductViewController.h; sourceTree = "<group>"; };
+		C00B62221927D52D008B1B10 /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
+		C00B62241927D53C008B1B10 /* OpportunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpportunityViewController.h; sourceTree = "<group>"; };
+		C00B62251927D53C008B1B10 /* OpportunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpportunityViewController.m; sourceTree = "<group>"; };
+		C00B622D1927D606008B1B10 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		C00B622E1927D606008B1B10 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		C00B62301927D626008B1B10 /* Opportunity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Opportunity.h; sourceTree = "<group>"; };
+		C00B62311927D626008B1B10 /* Opportunity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Opportunity.m; sourceTree = "<group>"; };
+		C00B62331927D633008B1B10 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		C00B62341927D633008B1B10 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		C00B62361927D647008B1B10 /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		C00B62371927D647008B1B10 /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Client.m; sourceTree = "<group>"; };
+		C00B62391927D655008B1B10 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		C00B623A1927D655008B1B10 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +142,13 @@
 				C00B61F21927B78A008B1B10 /* AppDelegate.h */,
 				C00B61F31927B78A008B1B10 /* AppDelegate.m */,
 				C00B61F51927B78A008B1B10 /* Main.storyboard */,
-				C00B61F81927B78A008B1B10 /* ViewController.h */,
-				C00B61F91927B78A008B1B10 /* ViewController.m */,
 				C00B61FB1927B78A008B1B10 /* Images.xcassets */,
+				C00B622B1927D5C7008B1B10 /* Reveal */,
+				C00B622A1927D5A0008B1B10 /* Opportunity */,
+				C00B62291927D597008B1B10 /* Product */,
+				C00B62281927D591008B1B10 /* Client */,
+				C00B62271927D58B008B1B10 /* Menu */,
+				C00B622C1927D5E8008B1B10 /* About */,
 				C00B61EA1927B78A008B1B10 /* Supporting Files */,
 			);
 			path = GarageSale;
@@ -150,6 +181,68 @@
 				C00B620B1927B78A008B1B10 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C00B62271927D58B008B1B10 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				C00B62391927D655008B1B10 /* Menu.h */,
+				C00B623A1927D655008B1B10 /* Menu.m */,
+				C00B621B1927D4DB008B1B10 /* MenuViewController.h */,
+				C00B621C1927D4DB008B1B10 /* MenuViewController.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		C00B62281927D591008B1B10 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				C00B62361927D647008B1B10 /* Client.h */,
+				C00B62371927D647008B1B10 /* Client.m */,
+				C00B621E1927D51C008B1B10 /* ClientViewController.h */,
+				C00B621F1927D51C008B1B10 /* ClientViewController.m */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		C00B62291927D597008B1B10 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				C00B62331927D633008B1B10 /* Product.h */,
+				C00B62341927D633008B1B10 /* Product.m */,
+				C00B62211927D52D008B1B10 /* ProductViewController.h */,
+				C00B62221927D52D008B1B10 /* ProductViewController.m */,
+			);
+			name = Product;
+			sourceTree = "<group>";
+		};
+		C00B622A1927D5A0008B1B10 /* Opportunity */ = {
+			isa = PBXGroup;
+			children = (
+				C00B62301927D626008B1B10 /* Opportunity.h */,
+				C00B62311927D626008B1B10 /* Opportunity.m */,
+				C00B62241927D53C008B1B10 /* OpportunityViewController.h */,
+				C00B62251927D53C008B1B10 /* OpportunityViewController.m */,
+			);
+			name = Opportunity;
+			sourceTree = "<group>";
+		};
+		C00B622B1927D5C7008B1B10 /* Reveal */ = {
+			isa = PBXGroup;
+			children = (
+				C00B62181927C85A008B1B10 /* SWRevealViewController.h */,
+				C00B62191927C85A008B1B10 /* SWRevealViewController.m */,
+			);
+			name = Reveal;
+			sourceTree = "<group>";
+		};
+		C00B622C1927D5E8008B1B10 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				C00B622D1927D606008B1B10 /* AboutViewController.h */,
+				C00B622E1927D606008B1B10 /* AboutViewController.m */,
+			);
+			name = About;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +342,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C00B61FA1927B78A008B1B10 /* ViewController.m in Sources */,
+				C00B623B1927D655008B1B10 /* Menu.m in Sources */,
+				C00B622F1927D606008B1B10 /* AboutViewController.m in Sources */,
+				C00B62381927D647008B1B10 /* Client.m in Sources */,
+				C00B62351927D633008B1B10 /* Product.m in Sources */,
 				C00B61F41927B78A008B1B10 /* AppDelegate.m in Sources */,
+				C00B62261927D53C008B1B10 /* OpportunityViewController.m in Sources */,
 				C00B61F01927B78A008B1B10 /* main.m in Sources */,
+				C00B621A1927C85A008B1B10 /* SWRevealViewController.m in Sources */,
+				C00B621D1927D4DB008B1B10 /* MenuViewController.m in Sources */,
+				C00B62201927D51C008B1B10 /* ClientViewController.m in Sources */,
+				C00B62231927D52D008B1B10 /* ProductViewController.m in Sources */,
+				C00B62321927D626008B1B10 /* Opportunity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +558,7 @@
 				C00B62141927B78A008B1B10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C00B62151927B78A008B1B10 /* Build configuration list for PBXNativeTarget "GarageSaleTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +567,7 @@
 				C00B62171927B78A008B1B10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
