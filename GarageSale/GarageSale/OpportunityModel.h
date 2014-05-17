@@ -1,5 +1,5 @@
 //
-//  Menu.h
+//  OpportunityModel.h
 //  GarageSale
 //
 //  Created by Federico Amprimo on 17/05/14.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Menu : NSObject
+@interface OpportunityModel : NSObject
 
 @end

@@ -1,13 +1,13 @@
 //
-//  Client.h
+//  ClientModel.m
 //  GarageSale
 //
 //  Created by Federico Amprimo on 17/05/14.
 //  Copyright (c) 2014 Federico Amprimo. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "ClientModel.h"
 
-@interface Client : NSObject
+@implementation ClientModel
 
 @end

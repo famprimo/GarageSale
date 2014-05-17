@@ -26,10 +26,11 @@
 		C00B62231927D52D008B1B10 /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B62221927D52D008B1B10 /* ProductViewController.m */; };
 		C00B62261927D53C008B1B10 /* OpportunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B62251927D53C008B1B10 /* OpportunityViewController.m */; };
 		C00B622F1927D606008B1B10 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B622E1927D606008B1B10 /* AboutViewController.m */; };
-		C00B62321927D626008B1B10 /* Opportunity.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B62311927D626008B1B10 /* Opportunity.m */; };
-		C00B62351927D633008B1B10 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B62341927D633008B1B10 /* Product.m */; };
-		C00B62381927D647008B1B10 /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B62371927D647008B1B10 /* Client.m */; };
-		C00B623B1927D655008B1B10 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B623A1927D655008B1B10 /* Menu.m */; };
+		C00B623E1927DF0D008B1B10 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B623D1927DF0D008B1B10 /* MenuItem.m */; };
+		C00B62411927E136008B1B10 /* OpportunityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B62401927E136008B1B10 /* OpportunityModel.m */; };
+		C00B62441927E145008B1B10 /* ProductModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B62431927E145008B1B10 /* ProductModel.m */; };
+		C00B62471927E155008B1B10 /* ClientModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B62461927E155008B1B10 /* ClientModel.m */; };
+		C00B624A1927E164008B1B10 /* MenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B62491927E164008B1B10 /* MenuModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,14 +73,16 @@
 		C00B62251927D53C008B1B10 /* OpportunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpportunityViewController.m; sourceTree = "<group>"; };
 		C00B622D1927D606008B1B10 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		C00B622E1927D606008B1B10 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
-		C00B62301927D626008B1B10 /* Opportunity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Opportunity.h; sourceTree = "<group>"; };
-		C00B62311927D626008B1B10 /* Opportunity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Opportunity.m; sourceTree = "<group>"; };
-		C00B62331927D633008B1B10 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
-		C00B62341927D633008B1B10 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
-		C00B62361927D647008B1B10 /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
-		C00B62371927D647008B1B10 /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Client.m; sourceTree = "<group>"; };
-		C00B62391927D655008B1B10 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
-		C00B623A1927D655008B1B10 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
+		C00B623C1927DF0C008B1B10 /* MenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItem.h; sourceTree = "<group>"; };
+		C00B623D1927DF0D008B1B10 /* MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItem.m; sourceTree = "<group>"; };
+		C00B623F1927E136008B1B10 /* OpportunityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpportunityModel.h; sourceTree = "<group>"; };
+		C00B62401927E136008B1B10 /* OpportunityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpportunityModel.m; sourceTree = "<group>"; };
+		C00B62421927E145008B1B10 /* ProductModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductModel.h; sourceTree = "<group>"; };
+		C00B62431927E145008B1B10 /* ProductModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductModel.m; sourceTree = "<group>"; };
+		C00B62451927E155008B1B10 /* ClientModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientModel.h; sourceTree = "<group>"; };
+		C00B62461927E155008B1B10 /* ClientModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientModel.m; sourceTree = "<group>"; };
+		C00B62481927E164008B1B10 /* MenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuModel.h; sourceTree = "<group>"; };
+		C00B62491927E164008B1B10 /* MenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,8 +189,10 @@
 		C00B62271927D58B008B1B10 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				C00B62391927D655008B1B10 /* Menu.h */,
-				C00B623A1927D655008B1B10 /* Menu.m */,
+				C00B62481927E164008B1B10 /* MenuModel.h */,
+				C00B62491927E164008B1B10 /* MenuModel.m */,
+				C00B623C1927DF0C008B1B10 /* MenuItem.h */,
+				C00B623D1927DF0D008B1B10 /* MenuItem.m */,
 				C00B621B1927D4DB008B1B10 /* MenuViewController.h */,
 				C00B621C1927D4DB008B1B10 /* MenuViewController.m */,
 			);
@@ -197,8 +202,8 @@
 		C00B62281927D591008B1B10 /* Client */ = {
 			isa = PBXGroup;
 			children = (
-				C00B62361927D647008B1B10 /* Client.h */,
-				C00B62371927D647008B1B10 /* Client.m */,
+				C00B62451927E155008B1B10 /* ClientModel.h */,
+				C00B62461927E155008B1B10 /* ClientModel.m */,
 				C00B621E1927D51C008B1B10 /* ClientViewController.h */,
 				C00B621F1927D51C008B1B10 /* ClientViewController.m */,
 			);
@@ -208,8 +213,8 @@
 		C00B62291927D597008B1B10 /* Product */ = {
 			isa = PBXGroup;
 			children = (
-				C00B62331927D633008B1B10 /* Product.h */,
-				C00B62341927D633008B1B10 /* Product.m */,
+				C00B62421927E145008B1B10 /* ProductModel.h */,
+				C00B62431927E145008B1B10 /* ProductModel.m */,
 				C00B62211927D52D008B1B10 /* ProductViewController.h */,
 				C00B62221927D52D008B1B10 /* ProductViewController.m */,
 			);
@@ -219,8 +224,8 @@
 		C00B622A1927D5A0008B1B10 /* Opportunity */ = {
 			isa = PBXGroup;
 			children = (
-				C00B62301927D626008B1B10 /* Opportunity.h */,
-				C00B62311927D626008B1B10 /* Opportunity.m */,
+				C00B623F1927E136008B1B10 /* OpportunityModel.h */,
+				C00B62401927E136008B1B10 /* OpportunityModel.m */,
 				C00B62241927D53C008B1B10 /* OpportunityViewController.h */,
 				C00B62251927D53C008B1B10 /* OpportunityViewController.m */,
 			);
@@ -342,18 +347,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C00B623B1927D655008B1B10 /* Menu.m in Sources */,
 				C00B622F1927D606008B1B10 /* AboutViewController.m in Sources */,
-				C00B62381927D647008B1B10 /* Client.m in Sources */,
-				C00B62351927D633008B1B10 /* Product.m in Sources */,
 				C00B61F41927B78A008B1B10 /* AppDelegate.m in Sources */,
 				C00B62261927D53C008B1B10 /* OpportunityViewController.m in Sources */,
+				C00B62411927E136008B1B10 /* OpportunityModel.m in Sources */,
 				C00B61F01927B78A008B1B10 /* main.m in Sources */,
+				C00B624A1927E164008B1B10 /* MenuModel.m in Sources */,
+				C00B62441927E145008B1B10 /* ProductModel.m in Sources */,
+				C00B623E1927DF0D008B1B10 /* MenuItem.m in Sources */,
 				C00B621A1927C85A008B1B10 /* SWRevealViewController.m in Sources */,
+				C00B62471927E155008B1B10 /* ClientModel.m in Sources */,
 				C00B621D1927D4DB008B1B10 /* MenuViewController.m in Sources */,
 				C00B62201927D51C008B1B10 /* ClientViewController.m in Sources */,
 				C00B62231927D52D008B1B10 /* ProductViewController.m in Sources */,
-				C00B62321927D626008B1B10 /* Opportunity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
