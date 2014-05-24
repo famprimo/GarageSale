@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProductViewController : UIViewController
+@interface ProductViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *myTableView;
 
 @end

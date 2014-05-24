@@ -10,4 +10,6 @@
 
 @interface ProductModel : NSObject
 
+- (NSMutableArray*)getProducts;
+
 @end

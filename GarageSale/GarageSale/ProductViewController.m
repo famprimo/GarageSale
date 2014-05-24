@@ -8,9 +8,18 @@
 
 #import "ProductViewController.h"
 #import "SWRevealViewController.h"
+#import "Product.h"
+#import "ProductModel.h"
 
 @interface ProductViewController ()
+{
+    // The product data from the ProductModel
+    NSArray *_myData;
 
+    // The product that is selected from the table
+    Product *_selectedProduct;
+
+}
 @end
 
 @implementation ProductViewController
@@ -30,6 +39,14 @@
     // Do any additional setup after loading the view.
     
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
+    // Remember to set ViewControler as the delegate and datasource
+    self.myTableView.delegate = self;
+    self.myTableView.dataSource = self;
+    
+    // Get the listing data
+    _myData = [[[ProductModel alloc] init] getProducts];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,5 +65,46 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark Table Delegate Methods
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Retrieve cell
+    NSString *cellIdentifier = @"BasicCell";
+    UITableViewCell *myCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    // Get the listing to be shown
+    Product *myProducts = _myData[indexPath.row];
+    
+    // Get references to labels of cell
+    UILabel *nameLabel = (UILabel*)[myCell.contentView viewWithTag:2];
+    UILabel *codeLabel = (UILabel*)[myCell.contentView viewWithTag:3];
+    UILabel *priceLabel = (UILabel*)[myCell.contentView viewWithTag:4];
+    
+    // Set table cell labels to listing data
+    nameLabel.text = myProducts.name;
+    codeLabel.text = myProducts.GS_code;
+    priceLabel.text = [NSString stringWithFormat:@"$%f", myProducts.published_price];
+    
+    return myCell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return _myData.count;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"Row selected at row %i", indexPath.row);
+    
+    // Set selected listing to var
+    _selectedProduct = _myData[indexPath.row];
+    
+    // Manually call segue to detail view controller
+    // [self performSegueWithIdentifier:@"CellSelectionSegue" sender:self];
+}
+
 
 @end
