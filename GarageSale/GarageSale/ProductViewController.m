@@ -10,11 +10,12 @@
 #import "SWRevealViewController.h"
 #import "Product.h"
 #import "ProductModel.h"
+#import "ProductDetailViewController.h"
 
 @interface ProductViewController ()
 {
     // The product data from the ProductModel
-    NSArray *_myData;
+    NSMutableArray *_myData;
 
     // The product that is selected from the table
     Product *_selectedProduct;
@@ -45,8 +46,8 @@
     self.myTableView.dataSource = self;
     
     // Get the listing data
-    _myData = [[[ProductModel alloc] init] getProducts];
-
+    _myData = [[[ProductModel alloc] init] getProducts:_myData];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,16 +56,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 #pragma mark Table Delegate Methods
 
@@ -86,8 +77,9 @@
     // Set table cell labels to listing data
     nameLabel.text = myProducts.name;
     codeLabel.text = myProducts.GS_code;
-    priceLabel.text = [NSString stringWithFormat:@"$%f", myProducts.published_price];
-    pictureCell.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:myProducts.picture_link]]];
+//    priceLabel.text = [NSString stringWithFormat:@"$%.f", myProducts.published_price];
+    priceLabel.text = [NSString stringWithFormat:@"%@%.f", myProducts.currency, myProducts.published_price];
+    pictureCell.image = [UIImage imageWithData:myProducts.picture];
 
     return myCell;
 }
@@ -105,8 +97,18 @@
     _selectedProduct = _myData[indexPath.row];
     
     // Manually call segue to detail view controller
-    // [self performSegueWithIdentifier:@"CellSelectionSegue" sender:self];
+    [self performSegueWithIdentifier:@"ProductSelectionSegue" sender:self];
 }
 
+#pragma mark Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSLog (@"Segue");
+    
+    // Get reference to the destination view controller
+    ProductDetailViewController *detailVC = segue.destinationViewController;
+    detailVC.selectedProduct = _selectedProduct;
+}
 
 @end

@@ -10,6 +10,6 @@
 
 @interface ProductModel : NSObject
 
-- (NSMutableArray*)getProducts;
+- (NSMutableArray*)getProducts:(NSMutableArray*)productList;
 
 @end

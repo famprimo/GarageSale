@@ -11,7 +11,7 @@
 
 @implementation ProductModel
 
-- (NSMutableArray*)getProducts
+- (NSMutableArray*)getProducts:(NSMutableArray*)productList
 {
     // Array to hold the listing data
     NSMutableArray *products = [[NSMutableArray alloc] init];
@@ -24,6 +24,7 @@
     tempProduct.currency = @"S/.";
     tempProduct.published_price = 290.0;
     tempProduct.picture_link = @"https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash3/t1.0-9/10365873_837130456315654_6991006075101245277_n.jpg";
+    tempProduct.picture = [NSData dataWithContentsOfURL:[NSURL URLWithString:tempProduct.picture_link]];
     
     // Add listing #1 to the array
     [products addObject:tempProduct];
@@ -36,6 +37,7 @@
     tempProduct.currency = @"S/.";
     tempProduct.published_price = 250.0;
     tempProduct.picture_link = @"https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-prn1/t1.0-9/10341676_838515596177140_687032528327336304_n.jpg";
+    tempProduct.picture = [NSData dataWithContentsOfURL:[NSURL URLWithString:tempProduct.picture_link]];
     
     // Add listing #2 to the array
     [products addObject:tempProduct];
@@ -48,6 +50,7 @@
     tempProduct.currency = @"S/.";
     tempProduct.published_price = 1100.0;
     tempProduct.picture_link = @"https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-prn1/t1.0-9/10269440_835477799814253_5669782238393768165_n.jpg";
+    tempProduct.picture = [NSData dataWithContentsOfURL:[NSURL URLWithString:tempProduct.picture_link]];
     
     // Add listing #3 to the array
     [products addObject:tempProduct];

@@ -31,6 +31,7 @@
 		C00B62441927E145008B1B10 /* ProductModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B62431927E145008B1B10 /* ProductModel.m */; };
 		C00B62471927E155008B1B10 /* ClientModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B62461927E155008B1B10 /* ClientModel.m */; };
 		C00B624A1927E164008B1B10 /* MenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C00B62491927E164008B1B10 /* MenuModel.m */; };
+		C02823C219324C43000DAF00 /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C02823C119324C43000DAF00 /* ProductDetailViewController.m */; };
 		C0452E4719311C8500511C2A /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = C0452E4619311C8500511C2A /* Product.m */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,8 @@
 		C00B62461927E155008B1B10 /* ClientModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientModel.m; sourceTree = "<group>"; };
 		C00B62481927E164008B1B10 /* MenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuModel.h; sourceTree = "<group>"; };
 		C00B62491927E164008B1B10 /* MenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuModel.m; sourceTree = "<group>"; };
+		C02823C019324C43000DAF00 /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
+		C02823C119324C43000DAF00 /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
 		C0452E4519311C8500511C2A /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		C0452E4619311C8500511C2A /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -222,6 +225,8 @@
 				C00B62431927E145008B1B10 /* ProductModel.m */,
 				C00B62211927D52D008B1B10 /* ProductViewController.h */,
 				C00B62221927D52D008B1B10 /* ProductViewController.m */,
+				C02823C019324C43000DAF00 /* ProductDetailViewController.h */,
+				C02823C119324C43000DAF00 /* ProductDetailViewController.m */,
 			);
 			name = Product;
 			sourceTree = "<group>";
@@ -358,6 +363,7 @@
 				C00B62411927E136008B1B10 /* OpportunityModel.m in Sources */,
 				C00B61F01927B78A008B1B10 /* main.m in Sources */,
 				C00B624A1927E164008B1B10 /* MenuModel.m in Sources */,
+				C02823C219324C43000DAF00 /* ProductDetailViewController.m in Sources */,
 				C00B62441927E145008B1B10 /* ProductModel.m in Sources */,
 				C0452E4719311C8500511C2A /* Product.m in Sources */,
 				C00B623E1927DF0D008B1B10 /* MenuItem.m in Sources */,

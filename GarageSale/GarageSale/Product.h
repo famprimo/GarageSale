@@ -24,6 +24,7 @@
 @property (strong, nonatomic) NSDate *final_date;
 @property (strong, nonatomic) NSString *type;
 @property (strong, nonatomic) NSString *picture_link;
+@property (strong, nonatomic) NSData *picture;
 @property (strong, nonatomic) NSString *additional_pictures;
 @property (strong, nonatomic) NSString *status;
 @property (strong, nonatomic) NSDate *last_promotion_date;
