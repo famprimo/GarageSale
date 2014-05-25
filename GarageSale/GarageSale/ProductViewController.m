@@ -77,16 +77,18 @@
     // Get the listing to be shown
     Product *myProducts = _myData[indexPath.row];
     
-    // Get references to labels of cell
+    // Get references to images and labels of cell
     UILabel *nameLabel = (UILabel*)[myCell.contentView viewWithTag:2];
     UILabel *codeLabel = (UILabel*)[myCell.contentView viewWithTag:3];
     UILabel *priceLabel = (UILabel*)[myCell.contentView viewWithTag:4];
-    
+    UIImageView *pictureCell = (UIImageView*)[myCell.contentView viewWithTag:1];
+
     // Set table cell labels to listing data
     nameLabel.text = myProducts.name;
     codeLabel.text = myProducts.GS_code;
     priceLabel.text = [NSString stringWithFormat:@"$%f", myProducts.published_price];
-    
+    pictureCell.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:myProducts.picture_link]]];
+
     return myCell;
 }
 
