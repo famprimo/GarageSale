@@ -21,27 +21,27 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Qxw-fG-uhp">
-                                <rect key="frame" x="20" y="46" width="280" height="74"/>
+                                <rect key="frame" x="20" y="67" width="280" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZE1-Pm-ARO">
-                                <rect key="frame" x="20" y="329" width="280" height="131"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="ZE1-Pm-ARO">
+                                <rect key="frame" x="20" y="202" width="280" height="131"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.26000000000000001" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GS code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vah-pN-ROM">
-                                <rect key="frame" x="20" y="148" width="99" height="21"/>
+                                <rect key="frame" x="20" y="157" width="99" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0z-Lz-W7m">
-                                <rect key="frame" x="198" y="149" width="102" height="21"/>
+                                <rect key="frame" x="181" y="157" width="119" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="highlightedColor"/>
@@ -60,7 +60,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IJx-Gw-muF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="308" y="-445"/>
+            <point key="canvasLocation" x="208" y="-337"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bsT-Ym-ePV">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="ikv-Ti-h2z" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fp1-rf-8Qn">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="uCH-rm-UNd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mca-1T-MnE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-718" y="-337"/>
         </scene>
         <!--Product View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -132,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-213" y="-94"/>
+            <point key="canvasLocation" x="-261" y="-326"/>
         </scene>
         <!--Opportunity View Controller-->
         <scene sceneID="UtX-ds-yz7">
@@ -159,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a0o-4P-3Pj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="697" y="629"/>
+            <point key="canvasLocation" x="-75" y="857"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="qXh-Yb-7Ut">
@@ -175,13 +190,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegue" id="P4n-LJ-Qup"/>
                         <segue destination="2oV-2o-Tjc" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegue" id="Gvw-k8-CcS"/>
+                        <segue destination="ikv-Ti-h2z" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegue" id="sPb-um-2Lc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uVo-Jr-1MH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-845" y="273"/>
+            <point key="canvasLocation" x="-1301" y="393"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="RuU-y3-Jg7">
@@ -232,14 +247,14 @@
                     <connections>
                         <outlet property="tableView" destination="1Sa-LH-Q64" id="7kh-0C-qpb"/>
                         <segue destination="0YE-R3-1Ex" kind="custom" identifier="GoToOpportunitySegue" customClass="SWRevealViewControllerSegue" id="uX3-Iu-qk9"/>
-                        <segue destination="vXZ-lx-hvc" kind="custom" identifier="GoToProductSegue" customClass="SWRevealViewControllerSegue" id="6H1-8g-0dc"/>
                         <segue destination="wgm-aF-FGg" kind="custom" identifier="GoToClientSegue" customClass="SWRevealViewControllerSegue" id="Zea-W2-pVt"/>
                         <segue destination="kuF-Gt-ti0" kind="custom" identifier="GoToAboutSegue" customClass="SWRevealViewControllerSegue" id="3Yd-37-35M"/>
+                        <segue destination="ikv-Ti-h2z" kind="custom" identifier="GoToProductSegue" customClass="SWRevealViewControllerSegue" id="Xiu-MY-fow"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WBR-vd-3cV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-213" y="773"/>
+            <point key="canvasLocation" x="-725" y="609"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="sLY-fw-o0u">
@@ -257,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UvY-Xe-Kb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="697" y="1357"/>
+            <point key="canvasLocation" x="-75" y="1429"/>
         </scene>
         <!--Client View Controller-->
         <scene sceneID="cUD-f0-51L">
@@ -284,7 +299,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wai-LN-xcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="713" y="-107"/>
+            <point key="canvasLocation" x="-83" y="273"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -293,6 +308,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="6H1-8g-0dc"/>
+        <segue reference="Xiu-MY-fow"/>
     </inferredMetricsTieBreakers>
 </document>
