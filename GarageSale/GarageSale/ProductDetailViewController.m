@@ -8,6 +8,7 @@
 
 #import "ProductDetailViewController.h"
 #import "SWRevealViewController.h"
+#import "ProductImageViewController.h"
 
 
 @interface ProductDetailViewController ()
@@ -32,6 +33,12 @@
     
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 
+    // Add tap gesture recognizer to picture
+    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapPicture:)];
+    tapRecognizer.numberOfTapsRequired = 2;
+    [self.pictureImageView addGestureRecognizer:tapRecognizer];
+
+    // Asign values to view
     self.nameLabel.text = self.selectedProduct.name;
     self.descriptionLabel.text = self.selectedProduct.description;
     self.GS_codeLabel.text = self.selectedProduct.GS_code;
@@ -46,15 +53,22 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+- (void)tapPicture:(UITapGestureRecognizer *)sender
+{
+    NSLog(@"Tap Recognized");
+    
+    // Segue to the image
+    [self performSegueWithIdentifier:@"ProductImageSegue" sender:self];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+}
+
+#pragma mark Segue
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    // Get reference to the destination view controller
+    ProductImageViewController *imageVC = segue.destinationViewController;
+    imageVC.selectedProduct = self.selectedProduct;
 }
-*/
 
 @end
