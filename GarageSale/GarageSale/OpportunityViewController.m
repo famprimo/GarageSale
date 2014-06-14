@@ -38,6 +38,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)menuButtonTapped:(id)sender
+{
+    [self.revealViewController revealToggleAnimated:YES];
+}
+
+
 /*
 #pragma mark - Navigation
 
