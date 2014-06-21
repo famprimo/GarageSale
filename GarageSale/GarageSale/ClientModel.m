@@ -38,6 +38,7 @@
     [clients addObject:tempClient];
     
     // Create client #2
+    tempClient = [[Client alloc] init];
     tempClient.client_id = @"00002";
     tempClient.name = @"Natalia";
     tempClient.last_name = @"Gallardo";
@@ -58,6 +59,27 @@
     // Add client #2 to the array
     [clients addObject:tempClient];
     
+    // Create client #3
+    tempClient = [[Client alloc] init];
+    tempClient.client_id = @"00003";
+    tempClient.name = @"Melisa";
+    tempClient.last_name = @"Celi";
+    tempClient.sex = @"F";
+    tempClient.zone = @"Miraflores";
+    tempClient.address = @"Av. Pardo 413";
+    tempClient.phone1 = @"98-233-5113";
+    tempClient.phone2 = @"444-1515";
+    tempClient.phone3 = @"";
+    tempClient.email = @"mceli@hotmail.com";
+    tempClient.preference = @"F";
+    tempClient.facebook_id = @"https://www.facebook.com/melisa.celi.1";
+    tempClient.picture_link = @"https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/t1.0-1/p160x160/10343013_10152545434713487_289713323910298441_n.jpg";
+    tempClient.picture = [NSData dataWithContentsOfURL:[NSURL URLWithString:tempClient.picture_link]];
+    tempClient.notes = @"XXXX";
+    tempClient.agent_id = @"00001";
+    
+    // Add client #3 to the array
+    [clients addObject:tempClient];
  
     // Return the producct array as the return value
     return clients;

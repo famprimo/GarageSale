@@ -11,10 +11,11 @@
 #import "Product.h"
 #import "ProductModel.h"
 #import "ProductDetailViewController.h"
+#import "AppDelegate.h"
 
 @interface ProductViewController ()
 {
-    // The product data from the ProductModel
+    // Data for the table
     NSMutableArray *_myData;
 
     AppDelegate *mainDelegate;
@@ -77,7 +78,7 @@
     UITableViewCell *myCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     // Get the listing to be shown
-    Product *myProducts = _myData[indexPath.row];
+    Product *myProduct = _myData[indexPath.row];
     
     // Get references to images and labels of cell
     UILabel *nameLabel = (UILabel*)[myCell.contentView viewWithTag:2];
@@ -86,11 +87,10 @@
     UIImageView *pictureCell = (UIImageView*)[myCell.contentView viewWithTag:1];
 
     // Set table cell labels to listing data
-    nameLabel.text = myProducts.name;
-    codeLabel.text = myProducts.GS_code;
-//    priceLabel.text = [NSString stringWithFormat:@"$%.f", myProducts.published_price];
-    priceLabel.text = [NSString stringWithFormat:@"%@%.f", myProducts.currency, myProducts.published_price];
-    pictureCell.image = [UIImage imageWithData:myProducts.picture];
+    nameLabel.text = myProduct.name;
+    codeLabel.text = myProduct.GS_code;
+    priceLabel.text = [NSString stringWithFormat:@"%@%.f", myProduct.currency, myProduct.published_price];
+    pictureCell.image = [UIImage imageWithData:myProduct.picture];
 
     return myCell;
 }

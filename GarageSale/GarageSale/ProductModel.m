@@ -40,9 +40,9 @@
     [products addObject:tempProduct];
     
     // Create product #2
+    tempProduct = [[Product alloc] init];
     tempProduct.product_id = @"00002";
     tempProduct.owner_id = @"00001";
-    tempProduct = [[Product alloc] init];
     tempProduct.GS_code = @"GS3056";
     tempProduct.name = @"Mecedora Graco";
     tempProduct.description = @"Tiene un sonidito casi imperceptible. Comprado en USA el año pasado. Solo ha sido usado durante 5 meses y muy poco. La Aurora - MIRAFLORES";
