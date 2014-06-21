@@ -17,6 +17,8 @@
     // The product data from the ProductModel
     NSMutableArray *_myData;
 
+    AppDelegate *mainDelegate;
+
     // The product that is selected from the table
     Product *_selectedProduct;
 
@@ -39,15 +41,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // For the reveal menu to work
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
+    // To have access to shared arrays from AppDelegate
+    mainDelegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
     
     // Remember to set ViewControler as the delegate and datasource
     self.myTableView.delegate = self;
     self.myTableView.dataSource = self;
     
     // Get the listing data
-    _myData = [[[ProductModel alloc] init] getProducts:_myData];
-    
+    _myData = mainDelegate.sharedArrayProducts;
+
 }
 
 - (void)didReceiveMemoryWarning

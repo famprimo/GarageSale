@@ -37,13 +37,43 @@
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapPicture:)];
     tapRecognizer.numberOfTapsRequired = 2;
     [self.pictureImageView addGestureRecognizer:tapRecognizer];
-
-    // Asign values to view
+    
+    // Set text and position for Name
     self.nameLabel.text = self.selectedProduct.name;
-    self.descriptionLabel.text = self.selectedProduct.description;
-    self.GS_codeLabel.text = self.selectedProduct.GS_code;
-    self.priceLabel.text = [NSString stringWithFormat:@"%@%.f", self.selectedProduct.currency, self.selectedProduct.published_price];
+    [self.nameLabel sizeToFit];
+    self.nameLabel.numberOfLines = 0;
+    CGRect nameLabelFrame = self.nameLabel.frame;
+    nameLabelFrame.origin.y = 5;
+    self.nameLabel.frame = nameLabelFrame;
+
+    // Set image and position for Picture
     self.pictureImageView.image = [UIImage imageWithData:self.selectedProduct.picture];
+    CGRect pictureImageFrame = self.pictureImageView.frame;
+    pictureImageFrame.origin.y = self.nameLabel.frame.origin.y + self.nameLabel.frame.size.height + 10;
+    self.pictureImageView.frame = pictureImageFrame;
+
+    // Set text and position for Price
+    self.priceLabel.text = [NSString stringWithFormat:@"%@%.f", self.selectedProduct.currency, self.selectedProduct.published_price];
+    CGRect priceLabelFrame = self.priceLabel.frame;
+    priceLabelFrame.origin.y = self.pictureImageView.frame.origin.y;
+    self.priceLabel.frame = priceLabelFrame;
+
+    // Set text and position for GS code
+    self.GS_codeLabel.text = self.selectedProduct.GS_code;
+    CGRect GS_codeLabelFrame = self.GS_codeLabel.frame;
+    GS_codeLabelFrame.origin.y = self.priceLabel.frame.origin.y + self.priceLabel.frame.size.height + 5;
+    self.GS_codeLabel.frame = GS_codeLabelFrame;
+
+    // Set text and position for description
+    self.descriptionLabel.text = self.selectedProduct.description;
+    [self.descriptionLabel sizeToFit];
+    self.descriptionLabel.numberOfLines = 0;
+    CGRect descriptionLabelFrame = self.descriptionLabel.frame;
+    descriptionLabelFrame.origin.y = self.pictureImageView.frame.origin.y + self.pictureImageView.frame.size.height + 5;
+    self.descriptionLabel.frame = descriptionLabelFrame;
+    
+    // Set content size of scrollview
+    self.productScrollView.contentSize = CGSizeMake(self.view.frame.size.width, self.descriptionLabel.frame.origin.y + self.descriptionLabel.frame.size.height + 50);
 
 }
 

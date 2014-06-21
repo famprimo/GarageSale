@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MenuModel.h"
 #import "MenuItem.h"
+#import "ProductModel.h"
 
 @interface MenuViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 

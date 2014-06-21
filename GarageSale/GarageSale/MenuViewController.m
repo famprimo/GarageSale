@@ -8,8 +8,13 @@
 
 #import "MenuViewController.h"
 #import "SWRevealViewController.h"
+#import "ProductViewController.h"
 
 @interface MenuViewController ()
+{
+    // The product data from the ProductModel
+    NSMutableArray *_productList;
+}
 
 @end
 
@@ -30,6 +35,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // Get the Product data
+    _productList = [[[ProductModel alloc] init] getProducts:_productList];
     
     // Set self as the data source and delegate for the table view
     self.tableView.delegate = self;
@@ -122,7 +130,7 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    
+
     // Set the front view controller to be the destination on
     [self.revealViewController setFrontViewController:segue.destinationViewController];
     

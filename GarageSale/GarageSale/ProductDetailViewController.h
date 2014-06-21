@@ -18,5 +18,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *pictureImageView;
 
 @property (strong, nonatomic) Product *selectedProduct;
+@property (weak, nonatomic) IBOutlet UIScrollView *productScrollView;
 
 @end

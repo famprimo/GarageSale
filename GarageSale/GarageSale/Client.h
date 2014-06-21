@@ -1,14 +1,14 @@
 //
-//  ClientModel.h
+//  Client.h
 //  GarageSale
 //
-//  Created by Federico Amprimo on 17/05/14.
+//  Created by Federico Amprimo on 14/06/14.
 //  Copyright (c) 2014 Federico Amprimo. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface ClientModel : NSObject
+@interface Client : NSObject
 
 @property (strong, nonatomic) NSString *client_id;
 @property (strong, nonatomic) NSString *name;
@@ -28,6 +28,5 @@
 @property (strong, nonatomic) NSDate *last_inventory;
 @property (strong, nonatomic) NSString *notes;
 @property (strong, nonatomic) NSString *agent_id;
-
 
 @end
