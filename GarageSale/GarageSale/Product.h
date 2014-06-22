@@ -11,7 +11,7 @@
 @interface Product : NSObject
 
 @property (strong, nonatomic) NSString *product_id;
-@property (strong, nonatomic) NSString *owner_id;
+@property (strong, nonatomic) NSString *client_id;
 @property (strong, nonatomic) NSString *GS_code;
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *description;

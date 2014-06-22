@@ -46,10 +46,22 @@
     nameLabelFrame.origin.y = 5;
     self.nameLabel.frame = nameLabelFrame;
 
-    // Set image and position for Picture
+    // Set image and position for Client picture
+    self.pictureClient.image = [UIImage imageWithData:self.selectedClient.picture];
+    CGRect pictureClientFrame = self.pictureClient.frame;
+    pictureClientFrame.origin.y = self.nameLabel.frame.origin.y + self.nameLabel.frame.size.height + 10;
+    self.pictureClient.frame = pictureClientFrame;
+
+    // Set text and position for Price
+    self.nameClient.text = [NSString stringWithFormat:@"%@ %@", self.selectedClient.name, self.selectedClient.last_name];
+    CGRect nameClientFrame = self.nameClient.frame;
+    nameClientFrame.origin.y = self.pictureClient.frame.origin.y;
+    self.nameClient.frame = nameClientFrame;
+ 
+    // Set image and position for Product picture
     self.pictureImageView.image = [UIImage imageWithData:self.selectedProduct.picture];
     CGRect pictureImageFrame = self.pictureImageView.frame;
-    pictureImageFrame.origin.y = self.nameLabel.frame.origin.y + self.nameLabel.frame.size.height + 10;
+    pictureImageFrame.origin.y = self.pictureClient.frame.origin.y + self.pictureClient.frame.size.height + 10;
     self.pictureImageView.frame = pictureImageFrame;
 
     // Set text and position for Price

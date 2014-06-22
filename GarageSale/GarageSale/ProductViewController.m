@@ -120,6 +120,9 @@
     // Get reference to the destination view controller
     ProductDetailViewController *detailVC = segue.destinationViewController;
     detailVC.selectedProduct = _selectedProduct;
+    detailVC.selectedClient = [[[ProductModel alloc] init] getClient:_selectedProduct];
+    
+
 }
 
 @end
