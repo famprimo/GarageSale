@@ -7,9 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Client.h"
+#import "Product.h"
 
 @interface ProductModel : NSObject
 
 - (NSMutableArray*)getProducts:(NSMutableArray*)productList;
+
+- (Client*)getClient:(Product*)productFound;
 
 @end

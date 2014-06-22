@@ -12,6 +12,8 @@
 #import "ProductModel.h"
 #import "ProductDetailViewController.h"
 #import "AppDelegate.h"
+#import "ClientModel.h"
+#import "Client.h"
 
 @interface ProductViewController ()
 {
@@ -120,6 +122,8 @@
     // Get reference to the destination view controller
     ProductDetailViewController *detailVC = segue.destinationViewController;
     detailVC.selectedProduct = _selectedProduct;
+    detailVC.selectedClient = [[[ProductModel alloc] init] getClient:_selectedProduct];
+    
 }
 
 @end
