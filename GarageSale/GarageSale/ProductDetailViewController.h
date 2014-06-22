@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "Product.h"
-#import "Client.h"
 
 @interface ProductDetailViewController : UIViewController
 
@@ -19,8 +18,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *pictureImageView;
 
 @property (strong, nonatomic) Product *selectedProduct;
-@property (strong, nonatomic) Client *selectedClient;
-
 @property (weak, nonatomic) IBOutlet UIScrollView *productScrollView;
 
 @end
